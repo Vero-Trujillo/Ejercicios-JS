@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!--Interacción con el DOM - Punto 1-->
+
+    <div class="img-btn">
+        <img src="imágenes/Passarella.jpg" alt="" id="imagen" class="imagen">
+
+        <button class="btn-carrusel"><i class="bi bi-arrow-right-square der" id="der"></i></button>
+        <button class="btn-carrusel"><i class="bi bi-arrow-left-square izq" id="izq"></i></button>
+    </div>
+
+    <!--Interacción con el DOM - Punto 2-->
+
+    <div class="texto">
+        <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro natus vitae
+            expedita neque, iusto ipsam
+            quisquam architecto possimus quod saepe obcaecati maxime accusamus qui sit doloremque quam laboriosam hic?
+        </p>
+
+        <button class="btnTamanio" id="btnTamanio">Aumentar tamaño de la fuente</button>
+    </div>
+
+    <!-- Interacción con el DOM - Punto 3 -->
+
+    <div class="tarjetas-todas">
+
+    <div class="tarjeta">
+        <img src="imágenes/Argentina.jpg" class="img-tarjeta" alt="">
+        <div class="tarjeta-descripcion">
+            <h5 class="tarjeta-titulo">Argentina 1978</h5>
+            <p class="tarjeta-texto">Argentina ganó su primera Copa del Mundo en Argentina 1978</p>
+            <span class="oculto" id="expansion1">Texto extra de la tarjeta expansible</span>
+            <button class="tarjeta-boton" id="tarjBtn1" onclick="expandir1()">Ver más</button>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="imágenes/México.jpg" class="img-tarjeta" alt="">
+        <div class="tarjeta-descripcion">
+            <h5 class="tarjeta-titulo">México 1986</h5>
+            <p class="tarjeta-texto">Argentina ganó su segunda Copa del Mundo en México 1986</p>
+            <span class="oculto" id="expansion2">Texto extra de la tarjeta expansible</span>
+            <button class="tarjeta-boton" id="tarjBtn2" onclick="expandir2()">Ver más</button>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="imágenes/Cátar.jpg" class="img-tarjeta" alt="">
+        <div class="tarjeta-descripcion">
+            <h5 class="tarjeta-titulo">Cátar 2022</h5>
+            <p class="tarjeta-texto">Argentina ganó su tercera Copa del Mundo en Cátar 2022</p>
+            <span class="oculto" id="expansion3">Texto extra de la tarjeta expansible</span>
+            <button class="tarjeta-boton" id="tarjBtn3" onclick="expandir3()">Ver más</button>
+        </div>
+    </div>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    Padding: 0;
+}
+
+/* Interacción con el DOM - Punto 1 */
+
+.imagen {
+    width: 100%;
+    height: 500px;
+}
+
+.btn-carrusel {
+    border: none;
+}
+
+button .der {
+    font-size: 70px;
+    color: rgb(194, 183, 183);
+    position: absolute;
+    top: 200px;
+    right: 50px;
+}
+
+button .izq {
+    font-size: 70px;
+    color: rgb(194, 183, 183);
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+/* Interacción con el DOM - Punto 2 */
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 30px;
+    font-size: 12px;
+}
+
+.btnTamanio {
+    background-color: rgb(230, 157, 105);
+    border: none;
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.grande {
+    font-size: 48px;
+}
+
+/* Interacción con el DOM - Punto 3 */
+
+.tarjetas-todas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjeta {
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(119, 68, 68);
+    background-color: beige;
+}
+
+
+.img-tarjeta {
+    width: 150px;
+}
+
+.tarjeta-descripcion {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-boton {
+    padding: 2px;
+    background-color: cyan;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10%;
+}
+
+.oculto {
+    display: none;
+}
+
+.expandido {
+    display: inline;
+}
